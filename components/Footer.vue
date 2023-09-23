@@ -1,7 +1,17 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <div text="xl gray4" m-5 flex="~ gap3" justify-center>
-    <NuxtLink i-carbon-campsite to="/" />
-    <a i-carbon-logo-github href="https://github.com/antfu/vitesse-nuxt3" target="_blank" />
-    <DarkToggle />
+  <div m-5 text-xl>
+    <div text=" gray4" flex="~ gap3" items-center>
+      <NuxtLink to="/">
+        @frandsuen
+      </NuxtLink>
+      <a i-carbon-logo-github href="https://github.com/frandsuen/100" target="_blank" />
+      <DarkToggle />
+    </div>
+    <div text-gray-5>
+      from 2023/09/23
+    </div>
   </div>
 </template>
