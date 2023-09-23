@@ -1,2 +1,2 @@
-export const appName = 'Vitesse for Nuxt 3'
-export const appDescription = 'Vitesse for Nuxt 3'
+export const appName = '100 Vue3 Apps'
+export const appDescription = '100 Vue3 Apps'
