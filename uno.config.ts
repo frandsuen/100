@@ -2,7 +2,6 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetTypography,
   presetUno,
   presetWebFonts,
   transformerDirectives,
@@ -20,12 +19,12 @@ export default defineConfig({
     presetIcons({
       scale: 1.2,
     }),
-    presetTypography(),
+    // presetTypography(),
     presetWebFonts({
       provider: 'none', // the provider for china
       fonts: {
         sans: 'Roboto',
-        mono: ['Fira Code', 'Fira Mono:400,700'],
+        mono: ['Fira Code', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
       },
     }),
   ],
