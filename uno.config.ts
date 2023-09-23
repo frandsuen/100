@@ -22,10 +22,10 @@ export default defineConfig({
     }),
     presetTypography(),
     presetWebFonts({
+      provider: 'none', // the provider for china
       fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
+        sans: 'Roboto',
+        mono: ['Fira Code', 'Fira Mono:400,700'],
       },
     }),
   ],
