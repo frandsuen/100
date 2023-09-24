@@ -1,4 +1,10 @@
-export const info = [
+interface Idea {
+  name: string
+  date: string
+  draft?: string
+}
+
+export const info: Idea[] = [
   {
     name: 'Bin2Dec',
     date: '2023/09/24',
