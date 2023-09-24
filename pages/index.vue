@@ -14,10 +14,10 @@ definePageMeta({
       100 Apps
     </h1>
     <div mt-5 grid="~ cols-3" gap-2>
-      <nuxt-link v-for="(item, index) in availableIdeas" :key="index" :to="item.no">
+      <NuxtLink v-for="(item, index) in availableIdeas" :key="index" :to="item.no">
         <span text-gray-5>{{ item.no }}</span>
         {{ item.name }}
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </div>
 </template>
