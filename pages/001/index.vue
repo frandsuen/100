@@ -16,16 +16,16 @@ function onInput(e: Event) {
 
 <template>
   <div h-full flex="~ items-center col justify-center">
-    <h1 text-4xl font-bold>
+    <h2 text-4xl font-bold>
       Bin2Dec
-    </h1>
+    </h2>
     <span>Enter a binary number to get a decimal number</span>
     <input v-model="binaryText" bg="white dark:#222" border="3 #222 dark:white " my-4 pa-4 text-xl outline-none type="text" placeholder="请输入二进制的值" @input="onInput($event)">
     <template v-if="binaryText">
       <span mt-3 :class="[isBinary ? 'text-green-500' : 'text-red-500']">{{ tips }}</span>
-      <h2 v-if="isBinary" mt-3 text-xl>
+      <h3 v-if="isBinary" mt-3 text-xl>
         {{ decimalText }}
-      </h2>
+      </h3>
     </template>
   </div>
 </template>

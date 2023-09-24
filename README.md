@@ -25,7 +25,6 @@
 
 - 🔥 The `<script setup>` syntax.
 
-- 🍍 [State Management via Pinia](https://github.com/vuejs/pinia), see [./composables/user.ts](./composables/user.ts).
 
 - 📑 [Layout system](./layouts).
 
