@@ -2,6 +2,10 @@
 import { ideas } from '~/constants/ideas'
 
 const avaliableIdeas = ideas.filter(i => !i.draft)
+
+definePageMeta({
+  layout: 'home',
+})
 </script>
 
 <template>

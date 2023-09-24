@@ -1,6 +1,11 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <main h-screen w-screen flex="~ col justify-center items-center">
-    <slot />
+  <div h-screen flex="~ col">
+    <main flex-1>
+      <slot />
+    </main>
     <Footer />
-  </main>
+  </div>
 </template>

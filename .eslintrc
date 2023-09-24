@@ -2,5 +2,8 @@
   "extends": [
     "@antfu",
     "@unocss"
-  ]
+  ],
+  "rules": {
+    "antfu/if-newline": "off"
+  }
 }

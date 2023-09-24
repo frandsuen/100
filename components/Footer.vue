@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div m-5 text-xl>
+  <div m-4xl text-xl flex="~ col items-center">
     <div text=" gray4" flex="~ gap3" items-center>
       <NuxtLink to="/">
         @frandsuen
