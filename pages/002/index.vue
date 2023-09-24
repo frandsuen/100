@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// TODO 未完成
 const rangeLists = ['top', 'right', 'bottom', 'left'] as const
 function getPosition(position: typeof rangeLists[number]) {
   if (position === 'top')
