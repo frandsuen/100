@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import TopView from '~/components/TopView.vue'
 import { ideas } from '~/constants/ideas'
+import { githubLink } from '~/constants'
 
 const route = useRoute()
 
-const title = computed(() => {
+const current = computed(() => {
   const current = ideas.find(item => item.no === route.name)
-  if (current)
-    return `${current.name} App`
+  return current ?? ''
+})
 
-  return ''
+const title = computed(() => {
+  return `${current.value && current.value.name} App`
 })
 
 watchEffect(() => {
@@ -17,6 +19,8 @@ watchEffect(() => {
     title: title.value,
   })
 })
+
+const link = computed(() => current.value ? `${githubLink}/tree/main/pages/${current.value.no}` : githubLink)
 </script>
 
 <template>
@@ -25,6 +29,6 @@ watchEffect(() => {
     <main flex-1>
       <slot />
     </main>
-    <Footer />
+    <Footer :git-link="link" />
   </div>
 </template>
