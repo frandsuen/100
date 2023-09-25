@@ -10,7 +10,11 @@ export const info: Idea[] = [
     date: '2023/09/24',
   },
   {
-    name: 'Border-radius',
+    name: 'Border Radius',
+    date: '2023/09/24',
+  },
+  {
+    name: 'Stopwatch',
     date: '2023/09/24',
   },
 ]
