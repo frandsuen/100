@@ -41,7 +41,14 @@ function start() {
   time.value = setInterval(() => {
     const index = (m.value / 10) % 100
     m.value += 10
-    line.value[index].height = line.value[index].height === '1rem' ? '2rem' : '1rem'
+
+    line.value[index].height = '2rem'
+
+    // 找之前的
+    if (index - 3 >= 0)
+      line.value[index - 3].height = '1rem'
+    else
+      line.value[line.value.length - index - 1].height = '1rem'
   }, 10)
 }
 
@@ -84,12 +91,4 @@ const timeS = computed(() => {
 </template>
 
 <style scoped>
-.current {
-  height: 2rem;
-  animation: line-height .2s;
-}
-
-@keyframes line-height {
-  to {height: 1rem;}
-}
 </style>
